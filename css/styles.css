@@ -1,0 +1,17 @@
+/*------------
+    fonts
+-------------*/
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Urbanist&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.font-alu{
+    font-family: 'Alumni Sans', sans-serif;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/*-----------
+    border
+-------------*/
+.border-bottom{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.123);
+}
