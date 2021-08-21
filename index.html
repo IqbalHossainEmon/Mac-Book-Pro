@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mac Book Pro!</title>
+    <!-- tailwind css -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom Css -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -32,70 +34,75 @@
                 <div>
                     <div class="pb-6 pt-16">
                         <h3 class="text-2xl">Memory</h3>
-                        <button
+                        <button id="memory-8gb"
                             class="border border-gray-500 px-4 py-1 rounded mt-4 hover:bg-gray-800 hover:text-white focus:ring-4 focus:ring-gray-400 font-semibold bg-gray-200">8GB
                             unified
                             Memory</button>
-                        <button
+                        <button id="memory-16gb"
                             class="border border-gray-500 px-4 py-1 rounded mt-4 hover:bg-gray-800 hover:text-white focus:ring-4 focus:ring-gray-400 font-semibold bg-gray-200">16GB
                             unified Memory</button>
                     </div>
                     <div class="py-6">
                         <h3 class="text-2xl">Storage</h3>
-                        <button
+                        <button id="storage-256gb"
                             class="border border-gray-500 px-4 py-1 rounded mt-4 hover:bg-gray-800 hover:text-white focus:ring-4 focus:ring-gray-400 font-semibold bg-gray-200">256GB
                             SSD Storage</button>
-                        <button
+                        <button id="storage-512gb"
                             class="border border-gray-500 px-4 py-1 rounded mt-4 hover:bg-gray-800 hover:text-white focus:ring-4 focus:ring-gray-400 font-semibold bg-gray-200">512GB
                             SSD Storage</button>
-                        <button
+                        <button id="storage-1tb"
                             class="border border-gray-500 px-4 py-1 rounded mt-4 hover:bg-gray-800 hover:text-white focus:ring-4 focus:ring-gray-400 font-semibold bg-gray-200">1TB
                             SSD Storage</button>
                     </div>
                     <div class="py-6">
                         <h3 class="text-2xl">Choose your delivery option</h3>
-                        <button
+                        <button id="delivery-free"
                             class="border border-gray-500 px-4 py-1 rounded mt-4 hover:bg-gray-800 hover:text-white focus:ring-4 focus:ring-gray-400 font-semibold bg-gray-200">Friday,
                             Aug 25 FREE Prime Delivery</button>
-                        <button
+                        <button id="delivery-20"
                             class="border border-gray-500 px-4 py-1 rounded mt-4 hover:bg-gray-800 hover:text-white focus:ring-4 focus:ring-gray-400 font-semibold bg-gray-200">Friday,
                             Aug 21 Delivery Charge $20</button>
                     </div>
                 </div>
                 <!-- Price display part -->
-                <div class="w-1/2 my-8">
+                <div class="w-1/2 my-8 font-semibold">
                     <div class="grid grid-cols-4 border-bottom">
                         <p class="py-1 col-span-3">Best Price</p>
-                        <p class="py-1">$1299</p>
+                        <p class="py-1">$<span id="best-price">1299</span></p>
                     </div>
                     <div class="grid grid-cols-4 border-bottom">
                         <p class="py-1 col-span-3">Extra Memory Cost</p>
-                        <p class="py-1">$0</p>
+                        <p class="py-1">$<span id="memory-cost">0</span></p>
                     </div>
                     <div class="grid grid-cols-4 border-bottom">
                         <p class="py-1 col-span-3">Extra Storage Cost</p>
-                        <p class="py-1">$0</p>
+                        <p class="py-1">$<span id="storage-cost">0</span></p>
                     </div>
                     <div class="grid grid-cols-4 border-b-2 border-black">
                         <p class="py-1 col-span-3">Delivery Charge</p>
-                        <p class="py-1">$0</p>
+                        <p class="py-1">$<span id="delivery-cost">0</span></p>
                     </div>
                     <div class="grid grid-cols-4  border-bottom">
                         <p class="py-1 col-span-3">Total Price</p>
-                        <p class="py-1">$1299</p>
+                        <p class="py-1">$<span id="total-price">1299</span></p>
                     </div>
                 </div>
+                <!-- Phomo Code part -->
                 <div class="my-12">
                     <h3 class="text-2xl">Add Promo Code</h3>
-                    <input type="text" class="p-2 border border-2 border-black rounded">
-                    <button class="bg-pink-700 hover:bg-red-700 text-white px-3 py-2 rounded">Apply</button>
+                    <input id="promo" type="text" class="p-2 border border-2 border-black rounded">
+                    <button onclick="apply()"
+                        class="bg-pink-700 hover:bg-red-700 text-white px-3 py-2 rounded">Apply</button>
                 </div>
             </div>
         </section>
-        <div>
-            <h2 class="text-5xl text-center mb-16 font-alu">Total:$<span>1299</span></h2>
-        </div>
     </main>
+    <footer>
+        <div>
+            <h2 class="text-5xl text-center mb-16 font-alu">Total:$<span id="total-total-price">1299</span></h2>
+        </div>
+    </footer>
+    <!-- JavaScript -->
     <script src="js/main.js"></script>
 </body>
 
